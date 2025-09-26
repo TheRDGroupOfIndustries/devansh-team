@@ -119,6 +119,143 @@
 /* small helper for form errors/success */
 .formNote{font-size:13px; color:var(--muted)}
 
+/* Contact / Booking specific styles */
+.contact{padding:64px 0; font-family: 'Poppins', sans-serif;}
+.contactLead{max-width:720px; margin:8px auto 24px; text-align:center; color:var(--muted)}
+.contact .sectionTitle{ color:black;text-align:center; margin-left:auto; margin-right:auto; font-family: 'Playfair Display', serif; font-weight:800; font-size:28px; letter-spacing:1px }
+.contactGrid{max-width:1100px; margin:0 auto; display:grid; grid-template-columns:420px 1fr; gap:28px; align-items:start}
+.contactCard{background:var(--surface); padding:22px; border-radius:12px; box-shadow:0 16px 40px rgba(2,6,23,0.06)}
+.contactCard h3{margin:0 0 12px; font-weight:600}
+.contactCard{position:relative}
+.contactCard .bookBtn{position:absolute; top:12px; right:12px; padding:8px 12px; border-radius:8px; background: linear-gradient(180deg,#d32f2f,#b71c1c); box-shadow:0 8px 22px rgba(211,47,47,0.12)}
+.contactCard .bookBtn:hover{background: linear-gradient(180deg,#b71c1c,#7f0f0f); transform:translateY(-2px)}
+.contactItem{margin:8px 0}
+.quickContact{display:flex; gap:12px; margin-top:14px}
+.contactItemRow{display:flex; gap:12px; align-items:flex-start; margin:12px 0}
+.iconBox{width:48px; height:48px; border-radius:10px; display:inline-flex; align-items:center; justify-content:center; color:white; font-size:20px; flex-shrink:0}
+.iconPhone{background:#ef4444}
+.iconEmail{background:#2563eb}
+.iconPlace{background:#10b981}
+.contactLabel{font-weight:700; margin-bottom:6px}
+.contactText{color:var(--muted); font-size:14px}
+.quickContact{display:flex; gap:12px; margin-top:18px}
+.whatsapp{display:inline-flex; align-items:center; gap:10px; background:#10b981; color:white; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:700}
+.callNow{display:inline-flex; align-items:center; gap:10px; background:#2563eb; color:white; padding:12px 18px; border-radius:8px; text-decoration:none; font-weight:700}
+
+/* Divider and heading above quick contact buttons */
+.contactDivider{border:0; height:1px; background:linear-gradient(90deg, rgba(0,0,0,0.04), rgba(0,0,0,0.06)); margin:18px 0}
+.quickContactHeading{font-weight:700; margin-bottom:8px}
+.mapWrap{margin-top:18px}
+
+/* Move the map slightly lower and ensure stacking doesn't block other elements */
+.mapWrap{margin-top:34px; position:relative; z-index:2}
+.bookingCard{position:relative; z-index:4}
+.bookBtn{position:relative; z-index:6}
+
+.bookingCard{background:var(--surface); padding:22px; border-radius:12px; box-shadow:0 16px 40px rgba(2,6,23,0.06)}
+.bookingCard h3{margin:0 0 12px; font-weight:600}
+
+/* Force body/form text in contact area to use Poppins regular for clarity */
+.contact, .contact input, .contact textarea, .contact select, .contact label, .contact p, .contact a, .contact small, .contact div{
+  font-weight:400;
+}
+
+/* Ensure numeric lines (phone) inherit Poppins geometric style */
+.contact .contactText, .contact .contactText a{font-variant-numeric:tabular-nums}
+.resultBanner{padding:12px 16px; border-radius:10px; margin-bottom:12px}
+.resultSuccess{background:linear-gradient(90deg,#e6ffef,#d1f7e1); color:#064e3b; border:1px solid #a7f3d0}
+.resultLocal{background:linear-gradient(90deg,#fff7ed,#fff1e0); color:#92400e; border:1px solid #ffedd5}
+.disabledForm *[disabled]{opacity:0.6}
+.formGrid{display:grid; grid-template-columns:1fr 1fr; gap:12px}
+.formGrid label{display:flex; flex-direction:column}
+.bookingCard label{margin-top:8px}
+/* Stack label text above inputs/textareas so the message box appears below the heading */
+.bookingCard label{display:flex; flex-direction:column; gap:6px}
+
+.bookBtn{background:linear-gradient(180deg,#c81a1a,#8f1414); color:white; padding:14px 20px; border-radius:10px; border:none; font-weight:700; width:100%; margin-top:18px}
+
+/* Quick Contact (blue) */
+.quickContact .bookBtn{
+  background: linear-gradient(180deg,#1976d2,#1565c0);
+  color: #ffffff;
+  padding: 10px 14px;
+  border-radius: 10px;
+  box-shadow: 0 8px 22px rgba(25,118,210,0.14);
+  width: auto;
+}
+.quickContact .bookBtn:hover{
+  background: linear-gradient(180deg,#1565c0,#0d47a1);
+  transform: translateY(-2px);
+}
+
+/* Ensure the Book Now button inside the contact card uses the same red CTA as the booking form */
+.contactCard .bookBtn{
+  background: linear-gradient(180deg,#d32f2f,#b71c1c);
+  color: #ffffff;
+  padding: 8px 12px;
+  border-radius: 8px;
+  box-shadow: 0 8px 22px rgba(211,47,47,0.12);
+  width: auto;
+}
+.contactCard .bookBtn:hover{
+  background: linear-gradient(180deg,#b71c1c,#7f0f0f);
+  transform: translateY(-2px);
+}
+
+.bookingCard input, .bookingCard select, .bookingCard textarea{padding:12px; border-radius:8px; border:1px solid rgba(15,23,36,0.06); background:transparent; width:100%}
+.bookingCard textarea{min-height:120px}
+.rowTwoCols{display:grid; grid-template-columns:1fr 1fr; gap:12px; margin-top:12px}
+.servicesGrid{display:grid; grid-template-columns:repeat(2,1fr); gap:12px 28px; margin-top:12px; align-items:start}
+.serviceCheck{display:flex; align-items:center; gap:8px; font-size:14px}
+
+/* Ensure service check rows remain horizontal inside the booking card
+   (overrides the generic .bookingCard label { flex-direction: column }) */
+.bookingCard .serviceCheck{display:flex; flex-direction:row; align-items:center; gap:12px}
+.bookingCard .serviceCheck .contactText{ /* ensure service label text inherits normal alignment */
+  text-align:left;
+}
+.serviceCheck input[type="checkbox"]{
+  /* custom square checkbox with controlled checkmark using a tiny SVG background */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width:20px;
+  height:20px;
+  margin:0;
+  padding:0;
+  border-radius:6px;
+  border:2.5px solid rgba(15,23,36,0.14); /* thicker border */
+  background:transparent;
+  display:inline-block;
+  vertical-align:middle;
+  cursor:pointer;
+  transition: background .12s ease, border-color .12s ease, box-shadow .12s ease;
+}
+.serviceCheck input[type="checkbox"]:focus{outline:2px solid rgba(59,130,246,0.18); outline-offset:2px}
+.serviceCheck input[type="checkbox"]:checked{
+  background: #e6f0ff; /* subtle blue tint */
+  border-color: #3b82f6; /* blue border when checked */
+  box-shadow: 0 2px 6px rgba(59,130,246,0.08);
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><polyline points='20 6 9 17 4 12' stroke='%233b82f6' stroke-width='2.5' fill='none' stroke-linecap='round' stroke-linejoin='round'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+}
+.charCount{font-size:12px; color:var(--muted); margin-top:6px}
+
+/* Force an element to take the full width under the two-column grid */
+.fullWidthBlock{grid-column:1 / -1; margin-top:12px}
+.fullWidthBlock label{display:flex; flex-direction:column}
+
+.bookBtn{display:flex; align-items:center; justify-content:center; gap:10px}
+/* remove emoji pseudo-element for a cleaner CTA */
+.bookBtn::before{content:none; display:none}
+
+@media (max-width:1024px){
+  .contactGrid{grid-template-columns:1fr}
+  .formGrid{grid-template-columns:1fr}
+}
+
 /* Responsiveness */
 @media (max-width:1024px){
   .hero{grid-template-columns:1fr; grid-template-rows:auto;}
@@ -134,6 +271,21 @@
   .portfolioGrid{grid-template-columns:1fr}
 }
 
+/* Strong layout override: ensure services checkbox rows are horizontal and left-aligned
+   This fixes cases where .bookingCard label defaulted to column layout */
+.bookingCard .servicesGrid .serviceCheck{
+  display:flex !important;
+  flex-direction:row !important;
+  align-items:center !important;
+  justify-content:flex-start !important;
+  gap:12px !important;
+  text-align:left !important;
+}
+.bookingCard .servicesGrid .serviceCheck input[type="checkbox"]{
+  display:inline-block !important;
+  margin-right:8px !important;
+}
+
 /* NAV */
 .nav{background:transparent; position:sticky; top:0; z-index:120; transition: background 220ms ease, box-shadow 220ms ease}
 .navInner{max-width:1200px; margin:0 auto; display:flex; align-items:center; justify-content:space-between; padding:16px 20px}
@@ -142,7 +294,46 @@
 .logoText small{display:block; font-size:12px; color:var(--muted)}
 .navLinks{display:flex; gap:18px; align-items:center}
 .navLinks a{color:var(--text); text-decoration:none; padding:6px}
-.bookBtn{background:linear-gradient(90deg,var(--accent),#ff7a7a); color:white; padding:8px 14px; border-radius:8px; box-shadow:0 12px 30px rgba(255,74,74,0.12)}
+.bookBtn{background:linear-gradient(180deg,#c81a1a,#8f1414); color:white; padding:8px 14px; border-radius:8px; box-shadow:0 12px 30px rgba(200,30,30,0.14)}
+
+/* Nav-specific compact CTA: add a small circular paper-plane glyph on the left */
+.nav .bookBtn{display:inline-flex; align-items:center; gap:10px; padding:8px 12px}
+.nav .bookBtn::before{content:none; display:none}
+
+/* booking form CTA: add a small circular paper-plane glyph on the left */
+.bookingCard .bookBtn{display:inline-flex; align-items:center; gap:10px}
+/* Booking form CTA: red (matches requested #d32f2f) */
+.bookingCard .bookBtn{
+  /* Converted Tailwind-like utility classes into CSS:
+     font-semibold rounded-lg transition-all duration-300 cursor-pointer whitespace-nowrap
+     bg-[linear-gradient(to_right,#dc2626,#b91c1c)] text-[#ffffff]
+     hover:bg-[linear-gradient(to_right,#b91c1c,#991b1b)]
+     shadow-lg hover:shadow-xl
+     px-8 py-4 text-lg w-full flex items-center justify-center
+  */
+  font-weight: 600; /* font-semibold */
+  border-radius: 12px; /* rounded-lg */
+  transition: all 300ms ease; /* transition-all duration-300 */
+  cursor: pointer;
+  white-space: nowrap;
+  background: linear-gradient(90deg,#dc2626 0%, #b91c1c 100%); /* left->right gradient */
+  color: #ffffff;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.12); /* shadow-lg */
+  padding: 14px 32px; /* px-8 py-4 */
+  font-size: 18px; /* text-lg */
+  width: 100%;
+  display: inline-flex; align-items:center; justify-content:center; gap:10px;
+  margin-top: 18px;
+}
+.bookingCard .bookBtn:hover{
+  background: linear-gradient(90deg,#b91c1c 0%, #991b1b 100%);
+  box-shadow: 0 18px 48px rgba(0,0,0,0.16); /* hover:shadow-xl */
+  transform: translateY(-2px);
+}
+/* use a real element for the button icon so we can control the SVG directly */
+.btnIcon{width:26px; height:25px; display:inline-flex; align-items:center; justify-content:center; border-radius:50%; background:transparent; box-shadow:none}
+.btnIcon svg{width:30px; height:50px; display:block; fill:white}
+.btnIcon img{width:30px; height:30px; display:block}
 
 /* scrolled state (opaque white header) */
 .scrolled{ background: #ffffff; box-shadow: 0 6px 24px rgba(2,6,23,0.06); backdrop-filter: blur(6px) }

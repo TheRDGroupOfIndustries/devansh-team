@@ -32,8 +32,8 @@ export default function RootLayout({ children }) {
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.5.0/remixicon.min.css" />
 
         {/* Preview assets (kept as in provided HTML) */}
-        <script type="module" crossOrigin src="/preview/3bc914ef-6f1c-4ff3-8b1c-947f56101906/2522111/assets/index-CkaSTK_7.js"></script>
-        <link rel="stylesheet" crossOrigin href="/preview/3bc914ef-6f1c-4ff3-8b1c-947f56101906/2522111/assets/index-DIiGBsI9.css" />
+  <script type="module" crossOrigin="anonymous" src="/preview/3bc914ef-6f1c-4ff3-8b1c-947f56101906/2522111/assets/index-CkaSTK_7.js"></script>
+  <link rel="stylesheet" crossOrigin="anonymous" href="/preview/3bc914ef-6f1c-4ff3-8b1c-947f56101906/2522111/assets/index-DIiGBsI9.css" />
 
         <title>{metadata.title}</title>
       </head>
