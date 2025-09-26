@@ -2,56 +2,71 @@ import React from 'react'
 import styles from './styles.module.css'
 
 const Hero = () => (
-  <section className={styles.hero}>
+  <section id="home" className={styles.hero}>
+    <div className={styles.bgCover} style={{backgroundImage: `url(/figma-assets/hero-event@2x.jpg)`}} />
+    <div className={styles.overlay} />
     <div className={styles.heroInner}>
-      <h1 className={styles.kicker}>Based in Varanasi, Uttar Pradesh</h1>
-      <h2 className={styles.title}>Professional Event Photography & Cinematic Videography</h2>
-      <p className={styles.subtitle}>Mr. Devesh & Team</p>
+      <div className={styles.kickerWrap}>
+        <span className={styles.kicker}>Based in Varanasi, Uttar Pradesh</span>
+      </div>
+
+      <h1 className={styles.title}>
+        <span className={styles.titleBig}>Professional</span>
+        <br />
+        <span className={styles.titleAccent}>Event<br/>Photography</span>
+        <br />
+        <span className={styles.titleSub}>&amp; Cinematic<br/>Videography</span>
+      </h1>
+
+      <p className={styles.lead}>Capturing corporate events, conferences, and special occasions with cinematic excellence. From Varanasi to destinations across India, we deliver premium visual storytelling.</p>
+
       <div className={styles.heroCtas}>
-        <a className={styles.ctaPrimary} href="#contact">Get Quote</a>
-        <a className={styles.ctaGhost} href="#portfolio">View Work</a>
+        <a className={styles.ctaPrimary} href="#contact">📞 Book Your Event</a>
+        <a className={styles.ctaGhost} href="#portfolio">▶ View Portfolio</a>
+      </div>
+
+      <div className={styles.heroStats}>
+        <div className={styles.stat}><strong>500+</strong><span>Events Captured</span></div>
+        <div className={styles.stat}><strong>8+</strong><span>Years Experience</span></div>
+        <div className={styles.stat}><strong>98%</strong><span>Happy Clients</span></div>
       </div>
     </div>
+
     <div className={styles.heroImageWrap}>
-      <img className={styles.heroImage} src="https://readdy.ai/api/search-image?query=professional%20photographer%20team%20behind%20the%20scenes%20wedding%20photography%20equipment%20cinematic%20lighting%20setup%20creative%20team%20working%20together%20modern%20photography%20studio%20atmosphere%20professional%20camera%20gear%20artistic%20composition&width=900&height=600&seq=hero&orientation=landscape" alt="Team"/>
+      <div className={styles.frame}>
+        <img className={styles.heroImage} src="/figma-assets/hero-event@2x.jpg" alt="Event"/>
+      </div>
+
+      <div className={styles.badgeTop}>Premium Quality<br/><small>4K Video + RAW Photos</small></div>
+      <div className={styles.badgeBottom}>Award Winning<br/><small>Photography Team</small></div>
     </div>
+
+    <div className={styles.decTop} />
+    <div className={styles.decBottom} />
   </section>
 )
 
-const Stats = () => (
-  <section className={styles.stats}>
-    <div className={styles.stat}>
-      <h3>500+</h3>
-      <p>Events Captured</p>
-    </div>
-    <div className={styles.stat}>
-      <h3>98%</h3>
-      <p>Client Satisfaction</p>
-    </div>
-    <div className={styles.stat}>
-      <h3>8+</h3>
-      <p>Years Experience</p>
-    </div>
-    <div className={styles.stat}>
-      <h3>1000+</h3>
-      <p>Work Samples</p>
-    </div>
-  </section>
-)
+// Stats section removed per request
 
 const Services = () => (
   <section className={styles.services} id="services">
-    <h2 className={styles.sectionTitle}>Our Services</h2>
+    <h2 className={styles.sectionTitle}>Our <span className={styles.highlight}>Services</span></h2>
     <div className={styles.servicesGrid}>
       {[
-        {title: 'Wedding Photography', items: ['Pre-wedding shoots','Ceremony coverage','Reception highlights','Couple portraits']},
-        {title: 'Corporate Events', items: ['Conference coverage','Team events','Product launches','Award ceremonies']},
-        {title: 'Cinematic Videography', items: ['Wedding films','Event highlights','Promotional videos','Documentary style']},
-        {title: 'Drone Coverage', items: ['Aerial photography','Venue overviews','Landscape shots','Dynamic sequences']},
+        {title: 'Wedding Photography', items: ['Pre-wedding shoots','Ceremony coverage','Reception highlights','Couple portraits'], icon: '💖', desc: 'Capturing your special day with artistic flair and emotional depth.'},
+        {title: 'Corporate Events', items: ['Conference coverage','Team events','Product launches','Award ceremonies'], icon: '🏢', desc: 'Professional documentation of business events, conferences, and corporate milestones.'},
+        {title: 'Cinematic Videography', items: ['Wedding films','Event highlights','Promotional videos','Documentary style'], icon: '🎬', desc: 'Creating stunning video stories that capture the essence and emotion of moments.'},
+        {title: 'Drone Coverage', items: ['Aerial photography','Venue overviews','Landscape shots','Dynamic sequences'], icon: '🚁', desc: 'Aerial photography and videography adding a unique perspective to your events.'},
+        {title: 'Event Photography', items: ['Birthday parties','Anniversaries','Family gatherings','Cultural events'], icon: '📸', desc: 'Comprehensive coverage of birthdays, anniversaries, parties, and special celebrations.'},
+        {title: 'Portrait Sessions', items: ['Individual portraits','Family sessions','Professional headshots','Maternity shoots'], icon: '🧑', desc: 'Professional individual and family portraits that showcase personality and style.'},
       ].map(s => (
         <article key={s.title} className={styles.serviceCard}>
-          <h3>{s.title}</h3>
-          <ul>
+          <div className={styles.iconCircle} aria-hidden>
+            <span className={styles.icon}>{s.icon}</span>
+          </div>
+          <h3 className={styles.serviceTitle}>{s.title}</h3>
+          <p className={styles.serviceDesc}>{s.desc}</p>
+          <ul className={styles.serviceList}>
             {s.items.map(i => <li key={i}>{i}</li>)}
           </ul>
         </article>
@@ -113,7 +128,6 @@ export default function PreviewPage(){
       <Nav />
       <main>
         <Hero />
-        <Stats />
         <How />
         <Services />
         <Portfolio />

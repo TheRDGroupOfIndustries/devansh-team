@@ -4,9 +4,10 @@ import styles from './styles.module.css'
 export default function How(){
   return (
     <section className={styles.how} id="about">
+      <h2 className={styles.aboutTitle}>About <span className={styles.highlight}>Mr. Devesh & Team</span></h2>
+
       <div className={styles.howInner}>
         <div className={styles.howContent}>
-          <h2 className={styles.sectionTitle}>About <span className={styles.highlight}>Mr. Devesh & Team</span></h2>
           <div className={styles.howCard}>
             <h3>Our Story</h3>
             <p>
@@ -17,24 +18,33 @@ export default function How(){
             </p>
           </div>
 
-          <div className={styles.statsCards}>
-            <div className={styles.smallCard}><strong>500+</strong><span>Events Captured</span></div>
-            <div className={styles.smallCard}><strong>98%</strong><span>Client Satisfaction</span></div>
+          <div className={styles.statBoxes}>
+            <div className={styles.statBox + ' ' + styles.statBoxRed}>
+              <div className={styles.statIcon}>📷</div>
+              <strong>500+</strong>
+              <small>Events Captured</small>
+            </div>
+
+            <div className={styles.statBox + ' ' + styles.statBoxBlue}>
+              <div className={styles.statIcon}>💙</div>
+              <strong>98%</strong>
+              <small>Client Satisfaction</small>
+            </div>
           </div>
         </div>
 
         <div className={styles.howMedia}>
           <div className={styles.mediaWrap}>
             <img src="/figma-assets/hero-event@2x.jpg" alt="Team at work"/>
-            <div className={styles.badge}>Mr. Devesh<br/><small>Lead Photographer</small></div>
+            <div className={styles.mediaBadge}><strong>Mr. Devesh</strong><small>Lead Photographer</small></div>
           </div>
         </div>
       </div>
 
       <div className={styles.howFeatures}>
-        <div className={styles.feature}><div className={styles.featureIcon}>🎯</div><h4>Creative Vision</h4></div>
-        <div className={styles.feature}><div className={styles.featureIcon}>⭐</div><h4>Excellence</h4></div>
-        <div className={styles.feature}><div className={styles.featureIcon}>❤️</div><h4>Passion</h4></div>
+        <div className={styles.feature}><div className={styles.featureIcon}>🎯</div><h4>Creative Vision</h4><p>We see beyond the lens, capturing not just images but emotions and stories that last a lifetime.</p></div>
+        <div className={styles.feature}><div className={styles.featureIcon}>⭐</div><h4>Excellence</h4><p>Every project receives our complete attention to detail and commitment to delivering exceptional results.</p></div>
+        <div className={styles.feature}><div className={styles.featureIcon}>❤️</div><h4>Passion</h4><p>Our love for photography and videography drives us to constantly innovate and exceed expectations.</p></div>
       </div>
     </section>
   )
