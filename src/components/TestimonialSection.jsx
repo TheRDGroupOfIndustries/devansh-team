@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import StatsSection from "./StatsSection";
 
 const testimonials = [
   {
@@ -176,6 +177,8 @@ export default function TestimonialSection() {
             />
           ))}
         </div>
+
+        <StatsSection />
       </div>
     </section>
   );
