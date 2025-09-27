@@ -1,0 +1,25 @@
+{
+  "fonts": {
+    "heading": "Poppins",
+    "body": "Inter",
+    "headingWeights": [700, 800],
+    "bodyWeights": [300, 400, 600]
+  },
+  "colors": {
+    "bg": "#f6f7fb",
+    "surface": "#ffffff",
+    "text": "#0f1724",
+    "muted": "#6b7280",
+    "accent": "#ff4b4b",
+    "accent2": "#3b82f6"
+  },
+  "spacing": {
+    "gutter": 24,
+    "containerMax": 1200
+  },
+  "animations": {
+    "ctaLift": 180,
+    "heroFade": 600,
+    "tileHover": 240
+  }
+}
