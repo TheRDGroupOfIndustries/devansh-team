@@ -1,0 +1,33 @@
+{
+  "name": "devansh-app",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbopack",
+    "build": "next build",
+    "start": "next start",
+    "seed:sanity": "node ./scripts/seedContact.mjs",
+    "lint": "eslint"
+  },
+  "dependencies": {
+    "@sanity/image-url": "^1.2.0",
+    "@sanity/vision": "^4.10.0",
+    "framer-motion": "^12.23.21",
+    "lucide-react": "^0.544.0",
+    "next": "15.5.3",
+    "next-sanity": "^11.1.2",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "remixicon": "^4.6.0",
+    "sanity": "^4.10.0",
+    "styled-components": "^6.1.19"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.3",
+    "tailwindcss": "^4",
+    "dotenv": "^16.3.1"
+  }
+}
