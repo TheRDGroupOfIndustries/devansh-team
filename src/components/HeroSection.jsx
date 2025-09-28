@@ -86,7 +86,7 @@ export default function HeroSection() {
   />
 
   {/* ✅ Premium Quality Badge (Top-Left) */}
-  <div
+  {/* <div
     className="absolute flex items-center gap-2 rounded-xl font-semibold text-center
       -top-4 left-[10%] sm:-top-6 sm:left-[10%]
       bg-white/95 backdrop-blur-sm p-3 sm:p-4 shadow-xl border border-white/20"
@@ -102,7 +102,27 @@ export default function HeroSection() {
         4K Video + RAW Photos
       </div>
     </div>
-  </div>
+  </div> */}
+
+
+  <div
+  className="absolute flex items-center gap-2 rounded-xl font-semibold text-center
+    bottom-3 left-0
+    bg-white/95 backdrop-blur-sm p-3 sm:p-4 shadow-xl border border-white/20 translate-y-1/2"
+>
+  <div className="w-8 h-8 sm:w-10 sm:h-10 flex items-center justify-center rounded-full bg-gradient-to-r from-orange-500 to-red-500">
+      <i className="ri-camera-fill text-white text-sm sm:text-lg"></i>
+    </div>
+    <div>
+      <div className="font-bold text-gray-900 text-xs sm:text-sm">
+        Premium Quality
+      </div>
+      <div className="text-[10px] sm:text-xs text-gray-600">
+        4K Video + RAW Photos
+      </div>
+    </div>
+</div>
+
 
   {/* ✅ Award Winning Badge (Bottom-Right) */}
   <div
