@@ -3,6 +3,8 @@ import React, { useState, useEffect } from "react";
 import Link from "next/link";
 import { client } from "@/sanity/lib/client";
 import Protfoliotry from "@/components/Protfoliotry";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const Portfolio = () => {
   const [portfolioItems, setPortfolioItems] = useState([]);
@@ -45,11 +47,12 @@ const Portfolio = () => {
   if (loading) return <div className="text-center py-10">Loading portfolio...</div>;
 
   return (
-    <div>
-      <section id="portfolio" className="py-20 bg-white min-h-screen">
-            <Link href="/" className="bg-gradient-to-r from-red-600 to-blue-600 rounded-full shadow-lg text-center text-white px-4 py-2 font-semibold tracking-tight absolute top-10 left-10">
+      <div>
+        <Navbar />
+      <section id="portfolio" className="py-20 bg-white min-h-screen mt-6">
+            {/* <Link href="/" className="bg-gradient-to-r from-red-600 to-blue-600 rounded-full shadow-lg text-center text-white px-4 py-2 font-semibold tracking-tight absolute top-20 left-10">
             Back To Home
-          </Link>
+          </Link> */}
         <div className="container mx-auto px-6">
           <div className="max-w-8xl mx-auto">
             {/* Heading */}
@@ -103,6 +106,7 @@ const Portfolio = () => {
           </div>
         </div>
       </section>
+      <Footer />
     </div>
   );
 };

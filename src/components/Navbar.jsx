@@ -14,7 +14,7 @@ const Navbar = () => {
       <div className="max-w-screen-xl mx-auto px-4 py-3 flex justify-between items-center">
 
         {/* Left Section */}
-        <div className="flex items-center space-x-3">
+        <Link href={"/"} className="flex items-center space-x-3">
           <div className="bg-gradient-to-r from-red-500 to-blue-500 p-3 rounded-full flex items-center justify-center">
             <Camera size={28} color="white" />
           </div>
@@ -22,7 +22,7 @@ const Navbar = () => {
             <span className="font-bold text-black text-lg" style={{fontFamily:'pacifico '}}>Mr. Devesh</span>
             <span className="text-sm text-gray-500">Photography & Videography</span>
           </div>
-        </div>
+        </Link>
 
 
         {/* Right Section */}
