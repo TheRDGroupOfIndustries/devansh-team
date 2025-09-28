@@ -6,13 +6,13 @@ export default function AboutSection() {
 
 <section id="about" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="max-w-6xl mx-auto">
+        <div className="max-w-8xl mx-auto">
           {/* Title */}
           <div className="text-center mb-16">
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
               About{" "}
               <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
-                Mr. Devesh &amp; Team
+                Mr. Devesh
               </span>
             </h2>
             <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-blue-600 mx-auto mb-8"></div>
@@ -26,13 +26,13 @@ export default function AboutSection() {
                 <h3 className="text-2xl font-bold text-gray-900 mb-4">
                   Our Story
                 </h3>
-                <p className="text-gray-700 leading-relaxed mb-4">
+                <p className="text-gray-700 leading-relaxed text-lg mb-4">
                   With over 8 years of experience in the photography and
                   videography industry, Mr. Devesh leads a passionate team of
                   creative professionals dedicated to capturing life's most
                   precious moments.
                 </p>
-                <p className="text-gray-700 leading-relaxed">
+                <p className="text-gray-700 leading-relaxed text-lg">
                   Our journey began with a simple belief: every moment tells a
                   story, and every story deserves to be told beautifully. From
                   intimate weddings to grand corporate events, we bring artistry
@@ -61,10 +61,10 @@ export default function AboutSection() {
             </div>
 
             {/* Right (Image + Card) */}
-            <div className="relative">
+            <div className="relative ml-10">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
-                  alt="Mr. Devesh & Team"
+                  alt="Mr. Devesh"
                   className="w-full h-full object-cover object-top"
                   src="/About.jpg"
                 />

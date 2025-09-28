@@ -94,7 +94,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#portfolio"
+                  href="/portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Portfolio
@@ -176,16 +176,16 @@ const Footer = () => {
         <div className="mt-8 pt-8 border-t border-gray-700 flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
           <div className="flex items-center space-x-6">
             <p className="text-gray-400 text-sm">
-              &copy; 2025 All Copyrights are reserved by The RD GROUP OF INDUSTRIES
-            </p>
+              &copy; 2025 All Copyrights are reserved by
             <a
               href="https://www.therdgroupofindustries.in"
               target="_blank"
               rel="noopener noreferrer"
               className="text-gray-300 hover:text-white text-lg transition-colors"
             >
-              Made In India
+              {" "}The RD GROUP OF INDUSTRIES
             </a>
+            </p>
           </div>
           <div className="flex items-center space-x-6">
             <Link

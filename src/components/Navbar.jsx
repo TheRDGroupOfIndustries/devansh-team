@@ -19,7 +19,7 @@ const Navbar = () => {
             <Camera size={28} color="white" />
           </div>
           <div className="flex flex-col">
-            <span className="font-bold text-black text-lg" style={{fontFamily:'pacifico '}}>Mr. Devesh & Team</span>
+            <span className="font-bold text-black text-lg" style={{fontFamily:'pacifico '}}>Mr. Devesh</span>
             <span className="text-sm text-gray-500">Photography & Videography</span>
           </div>
         </div>
@@ -66,9 +66,12 @@ const Navbar = () => {
                 {link}
               </a>
             ))}
-            <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
+            <Link href="#contact" className="bg-[linear-gradient(to_right,#DC2626,#B91C1C)] hover:bg-[linear-gradient(to_right,#B91C1C,#991B1B)] text-center text-white px-4 py-2 rounded">
+            Book Now
+          </Link>
+            {/* <button className="bg-orange-500 text-white px-4 py-2 rounded hover:bg-orange-600">
               Book Now
-            </button>
+            </button> */}
           </div>
         </div>
       )}

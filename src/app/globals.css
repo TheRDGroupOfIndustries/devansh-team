@@ -1,6 +1,9 @@
 @import "tailwindcss";
 @import "remixicon/fonts/remixicon.css";
 
+* {
+  scroll-behavior: smooth;
+}
 
 :root {
   --background: #ffffff;

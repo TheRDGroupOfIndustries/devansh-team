@@ -1,8 +1,8 @@
 "use client";
 import React, { useState, useEffect } from "react";
-import Protfoliotry from "./Protfoliotry";
-import { client } from "../sanity/lib/client";
 import Link from "next/link";
+import { client } from "@/sanity/lib/client";
+import Protfoliotry from "@/components/Protfoliotry";
 
 const Portfolio = () => {
   const [portfolioItems, setPortfolioItems] = useState([]);
@@ -46,18 +46,21 @@ const Portfolio = () => {
 
   return (
     <div>
-      <section id="portfolio" className="py-20 bg-white">
+      <section id="portfolio" className="py-20 bg-white min-h-screen">
+            <Link href="/" className="bg-gradient-to-r from-red-600 to-blue-600 rounded-full shadow-lg text-center text-white px-4 py-2 font-semibold tracking-tight absolute top-10 left-10">
+            Back To Home
+          </Link>
         <div className="container mx-auto px-6">
-          <div className="max-w-6xl mx-auto">
+          <div className="max-w-8xl mx-auto">
             {/* Heading */}
             <div className="text-center mb-16">
-              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+              <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
                 Our{" "}
                 <span className="bg-gradient-to-r from-red-600 to-blue-600 bg-clip-text text-transparent">
                   Portfolio
                 </span>
               </h2>
-              <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-blue-600 mx-auto mb-8"></div>
+              <div className="w-24 h-1 bg-gradient-to-r from-red-600 to-blue-600 mx-auto mb-4"></div>
               <p className="text-xl text-gray-600 max-w-3xl mx-auto">
                 Explore our collection of captured moments, from intimate
                 weddings to grand celebrations, each telling its unique story.
@@ -87,7 +90,7 @@ const Portfolio = () => {
 
             {/* 🔹 Portfolio Grid */}
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-              {filteredItems.slice(0, 8).map((item, index) => (
+              {filteredItems.map((item, index) => (
                 <Protfoliotry
                   key={index}
                   image={item.image}
@@ -96,13 +99,6 @@ const Portfolio = () => {
                   category={item.category}
                 />
               ))}
-            </div>
-
-            {/* Load More */}
-            <div className="text-center mt-12">
-              <Link href={"/portfolio"} className="bg-gradient-to-r from-red-600 to-blue-600 text-white px-8 py-3 rounded-lg font-semibold hover:from-red-700 hover:to-blue-700 transition-all duration-300 transform hover:scale-105 cursor-pointer whitespace-nowrap">
-                <i className="ri-add-line mr-2"></i>Load More Work
-              </Link>
             </div>
           </div>
         </div>

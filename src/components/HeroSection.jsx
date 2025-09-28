@@ -15,18 +15,16 @@ export default function HeroSection() {
 
         <div className="container z-20 mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
           {/* ================= Left Section ================= */}
-          <div className="space-y-6">
+          <div className="space-y-6 w-full">
             {/* Heading */}
-            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold pt-24 sm:leading-[1.25] sm:pt-">
+            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold pt-24 sm:leading-[1.25] sm:pt-0 w-full">
               <span className="block text-white">Professional</span>
-              <span className="block text-[rgb(251_146_60)]">Event</span>
-              <span className="block text-[rgb(251_146_60)]">Photography</span>
-              <span className="block text-white">& Cinematic</span>
-              <span className="block text-white">Videography</span>
+              <span className="block text-[rgb(251_146_60)]">Event Photography</span>
+              <span className="block text-5xl text-white">Videography & Cinematic</span>
             </h1>
 
             {/* Paragraph */}
-            <p className="text-base sm:text-lg max-w-lg font-semibold text-gray-200">
+            <p className="text-base sm:text-lg max-w-xl font-semibold text-gray-200">
               Capturing corporate events, conferences, and special occasions
               with cinematic excellence. From Varanasi to destinations across
               India, we deliver premium visual storytelling.
@@ -59,18 +57,18 @@ export default function HeroSection() {
             </div>
 
             {/* Stats */}
-            <div className="flex justify-center sm:justify-start space-x-6 sm:space-x-10 mt-8">
-              <div className="text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold">500+</h2>
-                <p className="text-sm">Events Captured</p>
+            <div className="flex justify-center sm:justify-start space-x-6 sm:space-x-10 mt-20">
+              <div className="">
+                <h2 className="text-3xl sm:text-5xl font-bold">500+</h2>
+                <p className="text-base">Events Captured</p>
               </div>
-              <div className="text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold">8+</h2>
-                <p className="text-sm">Years Experience</p>
+              <div className="">
+                <h2 className="text-3xl sm:text-5xl font-bold">8+</h2>
+                <p className="text-base">Years Experience</p>
               </div>
-              <div className="text-center">
-                <h2 className="text-2xl sm:text-3xl font-bold">98%</h2>
-                <p className="text-sm">Happy Clients</p>
+              <div className="">
+                <h2 className="text-3xl sm:text-5xl font-bold">98%</h2>
+                <p className="text-base">Happy Clients</p>
               </div>
             </div>
           </div>
