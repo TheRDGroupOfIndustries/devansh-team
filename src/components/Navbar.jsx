@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { Camera } from "lucide-react";
+import Link from "next/link";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -35,9 +36,9 @@ const Navbar = () => {
               {link}
             </a>
           ))}
-          <button className="bg-[linear-gradient(to_right,#DC2626,#B91C1C)] hover:bg-[linear-gradient(to_right,#B91C1C,#991B1B)] text-white px-4 py-2 rounded">
+          <Link href="#contact" className="bg-[linear-gradient(to_right,#DC2626,#B91C1C)] hover:bg-[linear-gradient(to_right,#B91C1C,#991B1B)] text-white px-4 py-2 rounded">
             Book Now
-          </button>
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
