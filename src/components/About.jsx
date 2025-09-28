@@ -61,7 +61,7 @@ export default function AboutSection() {
             </div>
 
             {/* Right (Image + Card) */}
-            <div className="relative ml-10">
+            <div className="relative sm:ml-10 ml-0">
               <div className="relative overflow-hidden rounded-2xl shadow-2xl">
                 <img
                   alt="Mr. Devesh"
