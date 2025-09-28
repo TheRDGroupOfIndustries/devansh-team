@@ -1,6 +1,7 @@
 "use client";
 import { Award } from "lucide-react";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 export default function HeroSection() {
   return (
@@ -16,7 +17,7 @@ export default function HeroSection() {
           {/* ================= Left Section ================= */}
           <div className="space-y-6">
             {/* Heading */}
-            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold leading-[1.25]">
+            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold pt-10 sm:leading-[1.25] sm:pt-0 md:pt-0">
               <span className="block text-white">Professional</span>
               <span className="block text-[rgb(251_146_60)]">Event</span>
               <span className="block text-[rgb(251_146_60)]">Photography</span>
@@ -33,26 +34,28 @@ export default function HeroSection() {
 
             {/* Buttons */}
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6">
-              <button
-                type="button"
+              <Link
+              href="#contact"
+                // type="button"
                 className="flex items-center justify-center font-semibold rounded-lg transition-all duration-300 cursor-pointer whitespace-nowrap 
                   px-6 py-3 sm:px-8 sm:py-4 text-base sm:text-lg transform hover:scale-105 shadow-lg hover:shadow-xl
                   bg-gradient-to-r from-orange-600 to-red-600 hover:from-orange-700 hover:to-red-700 text-white"
               >
                 <i className="ri-phone-fill mr-2"></i>
                 Book Your Event
-              </button>
+              </Link>
 
-              <button
-  type="button"
-  className="flex items-center font-semibold rounded-lg transition-all duration-300 cursor-pointer whitespace-nowrap 
+              <Link
+            // type="button"
+            href="#portfolio"
+            className="flex justify-center items-center font-semibold rounded-lg transition-all duration-300 cursor-pointer whitespace-nowrap 
              px-8 py-4 text-lg transform hover:scale-105 shadow-lg hover:shadow-xl
              bg-gradient-to-r from-blue-600 to-blue-700 hover:from-blue-700 hover:to-blue-800 text-white
              bg-white/10 backdrop-blur-sm border border-white/30 hover:bg-white/20"
 >
   <i className="ri-image-fill mr-2"></i>
   View Portfolio
-</button>
+</Link>
             </div>
 
             {/* Stats */}
