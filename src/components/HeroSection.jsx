@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <div className="w-full">
+    <div id="home" className="w-full">
       <section
         className="relative w-full min-h-screen flex items-center justify-center text-white bg-cover bg-center"
         style={{ backgroundImage: `url("/Hero.jpg")` }}

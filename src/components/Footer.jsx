@@ -88,13 +88,13 @@ const Footer = () => {
             <h4 className="text-lg font-semibold mb-6">Quick Links</h4>
             <ul className="space-y-3">
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="#about" className="text-gray-400 hover:text-white">
                   About Us
                 </Link>
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#portfolio"
                   className="text-gray-400 hover:text-white"
                 >
                   Portfolio
@@ -102,7 +102,7 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#service"
                   className="text-gray-400 hover:text-white"
                 >
                   Services
@@ -110,14 +110,14 @@ const Footer = () => {
               </li>
               <li>
                 <Link
-                  href="#"
+                  href="#testimonials"
                   className="text-gray-400 hover:text-white"
                 >
                   Testimonials
                 </Link>
               </li>
               <li>
-                <Link href="#" className="text-gray-400 hover:text-white">
+                <Link href="#contact" className="text-gray-400 hover:text-white">
                   Contact
                 </Link>
               </li>
