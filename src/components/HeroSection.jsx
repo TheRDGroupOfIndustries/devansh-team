@@ -17,7 +17,7 @@ export default function HeroSection() {
           {/* ================= Left Section ================= */}
           <div className="space-y-6">
             {/* Heading */}
-            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold pt-10 sm:leading-[1.25] sm:pt-0 md:pt-0">
+            <h1 className="text-[2.5rem] sm:text-[3rem] md:text-[4rem] font-bold pt-24 sm:leading-[1.25] sm:pt-0 md:pt-0">
               <span className="block text-white">Professional</span>
               <span className="block text-[rgb(251_146_60)]">Event</span>
               <span className="block text-[rgb(251_146_60)]">Photography</span>

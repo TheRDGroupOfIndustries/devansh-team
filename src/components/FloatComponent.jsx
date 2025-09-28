@@ -5,8 +5,8 @@ const FloatComponent = () => {
   return (
     <>
       {/* Left Badge */}
-      <div className="fixed sm:bottom-6 sm:left-6 bottom-14 right-6 z-40">
-        <div className="relative bg-gradient-to-r bg-[linear-gradient(to_right,#dc2626,#ef4444,#b91c1c)] text-white px-4 py-2 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
+      <div className="fixed sm:bottom-6 sm:left-6 bottom-20 right-6 z-40">
+        <div className="relative bg-gradient-to-r w-fit bg-[linear-gradient(to_right,#dc2626,#ef4444,#b91c1c)] text-white px-4 py-2 rounded-lg shadow-2xl transform hover:scale-105 transition-all duration-300 cursor-pointer">
           <div className="flex items-center space-x-2">
             <div className="w-6 h-6 bg-white/20 rounded-full flex items-center justify-center">
               <i className="ri-award-fill text-sm"></i>

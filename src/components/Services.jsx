@@ -196,28 +196,18 @@ export default function Services() {
             Let's discuss your vision and create a customized package that perfectly fits your needs and budget.
           </motion.p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <motion.Link
+            <Link
               href="#contact"              
-              initial={{ opacity: 0, x: -20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
               className="bg-red-500 text-white px-6 py-3 rounded-xl font-semibold hover:bg-red-700 transition"
             >
               Get Quote
-            </motion.Link>
-            <motion.Link
+            </Link>
+            <Link
               href="#portfolio"              
-              initial={{ opacity: 0, x: 20 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
               className="bg-blue-600 text-white px-6 py-3 rounded-xl font-semibold hover:bg-blue-800 transition"
             >
               View Work
-            </motion.Link>
+            </Link>
           </div>
         </motion.div>
       </motion.div>
