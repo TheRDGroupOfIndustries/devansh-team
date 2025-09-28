@@ -7,7 +7,7 @@ export default function HeroSection() {
     <div className="w-full">
       <section
         className="relative w-full min-h-screen flex items-center justify-center text-white bg-cover bg-center"
-        style={{ backgroundImage: `url("/hero.jpg")` }}
+        style={{ backgroundImage: `url("/Hero.jpg")` }}
       >
         {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/50"></div>
