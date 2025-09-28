@@ -32,7 +32,7 @@ const Footer = () => {
               </div>
               <div>
                 <h3 className={`text-2xl font-bold ${pacifico.className}`}>
-                  Mr. Devesh &amp; Team
+                  Mr. Devesh
                 </h3>
                 <p className="text-[#7d8491] text-sm">
                   Photography &amp; Videography
