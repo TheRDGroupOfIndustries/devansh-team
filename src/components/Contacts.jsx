@@ -180,10 +180,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Phone</h4>
                       <p className="text-gray-600">
-                        <a href="tel:+919876543210">+91 98765 43210</a>
-                      </p>
-                      <p className="text-gray-600">
-                        <a href="tel:+918765432109">+91 87654 32109</a>
+                        <a href="tel:+919876543210">+91 9026 811603</a>
                       </p>
                     </div>
                   </div>
@@ -195,10 +192,7 @@ export default function Contact() {
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Email</h4>
                       <p className="text-gray-600">
-                        <a href="mailto:info@mrdeveshteam.com">info@mrdeveshteam.com</a>
-                      </p>
-                      <p className="text-gray-600">
-                        <a href="mailto:bookings@mrdeveshteam.com">bookings@mrdeveshteam.com</a>
+                        <a href="mailto:info@mrdeveshteam.com">deveshkumarphotography1@gmail.com</a>
                       </p>
                     </div>
                   </div>
@@ -209,7 +203,7 @@ export default function Contact() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-gray-900 mb-1">Location</h4>
-                      <p className="text-gray-600">Varanasi, Uttar Pradesh</p>
+                      <p className="text-gray-600">Shop No 22 , Krishi Export plaza Rathyatra Road Sigra varanasi</p>
                       <p className="text-gray-600">Serving Pan India</p>
                     </div>
                   </div>
